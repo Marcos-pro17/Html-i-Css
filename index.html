@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title><strong> Eleven Fan Hub</title></strong>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Inazuma Eleven Fan Hub</h1>
+
+  <nav>
+    <a>Inici</a>
+    <a>Personatges</a>
+    <a>Contacte</a>
+  </nav> 
+
+  <div class="portada">
+    <img src="images/Sense títol.png" alt="Portada Inazuma Eleven">
+    <p><strong>Benvingut al món d’Inazuma Eleven!</strong><br>
+    Descobreix els personatges, les tècniques especials i els moments més èpics de la sèrie!</p>
+  </div>
+
+  <div class="personatges">
+    <div class="personatge">
+      <img src="images/Sense títl.png" alt="Mark Evans">
+      <p>El porter llegendari i líder de l’equip Raimon amb tecniques com la Mà celestial</p>
+    </div>
+
+    <div class="personatge">
+      <img src="images/Imatge deixada anar.png" alt="Axel Blaze">
+      <p>Un davanter poderós amb tècniques com el Tornado de Foc</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Inazuma Eleven Fan Hub | Segueix-nos a Instagram @inazumafan
+  </footer>
+
+  
+<script>
+  const navLinks = document.querySelectorAll("nav a");
+  const portada = document.querySelector(".portada");
+  const personatges = document.querySelectorAll(".personatge");
+
+  navLinks.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const label = btn.textContent.trim();
+
+      // Quitar selección anterior
+      portada.classList.remove("selected");
+      personatges.forEach(p => p.classList.remove("selected"));
+
+      if (label === "Inici") {
+        portada.classList.add("selected");
+      }
+
+      if (label === "Personatges") {
+        personatges.forEach(p => p.classList.add("selected"));
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+  
+
+
+
+
+  

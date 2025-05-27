@@ -1,0 +1,110 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #2338f7;
+  text-align: center; 
+  background-image: url(images/22403.jpg); 
+  background-size: cover;
+  background-position:center;
+}
+
+
+h1 {
+  margin-top: 80px;
+  font-size: 2.5em;
+  color: #ff9100;
+  font-style: serif;
+  font-style: italic;
+  background-color: rgb(251, 255, 200);
+  border-radius: 20px;
+  display: inline-block;
+}
+
+
+nav {
+  margin: 30px 0;
+}
+
+nav a {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #2bf8ff;
+  color: black;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #000099; /* esto es para hacerlo mas bonito que he entendido para que sirve pero lo he sacado de una web externa a la teoria*/
+}
+
+
+.portada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.portada img {
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.portada p {
+  background: #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+.personatges {
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 40px 20px;
+}
+
+.personatge {
+  width: 220px;
+  text-align: center;
+}
+
+.personatge img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.personatge p {
+  margin-top: 10px;
+  padding: 12px;
+  background: white;
+  border-radius: 10px;
+  font-weight: bold; 
+  color: #333;
+  overflow: visible;   
+  white-space: normal; 
+  text-overflow: unset;
+}
+
+footer {
+  margin-top: 40px;
+  color: #000000;
+  font-size: 0.9em;
+}
+
+.selected {
+  border: 3px solid yellow;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px orange;
+  transition: all 0.3s ease;
+}
+
